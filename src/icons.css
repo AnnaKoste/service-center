@@ -1,0 +1,15 @@
+.icons {
+  max-width: 1400px;
+}
+.icons-sm {
+  position: fixed;
+  display: block;
+  right: 10px;
+	top: 35%;
+}
+.arrowUp {
+  position: fixed;
+  cursor: pointer;
+  right: 10px;
+  top: 90%;
+}

@@ -1,3 +1,35 @@
 .price > h2 {
   text-align: center;
 }
+
+table {
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+  border-spacing: 0;
+}
+td {
+  padding: 1em;
+}
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+tbody tr:nth-child(even) {
+  background-color: #f0f1f2;
+}
+.price-header {
+  background-image: url(img/bg3.jpg);
+  color: #ffffff;
+}
+.table-header {
+  font-size: 20px;
+}
+.price-header-right {
+  text-align: center;
+}
+.text-green {
+  color: #2dae6a;
+}
+.text-blue {
+  color: #00aeea;
+}

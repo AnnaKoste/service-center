@@ -6,7 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(img/bg.png);
+  background-image: url(img/bg4.png);
+  background-size: cover;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -19,6 +20,7 @@ code {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25);
 }
 ul.menu {
   display: inline-block;
@@ -33,7 +35,7 @@ ul.menu > li {
 ul.menu > li > a {
   display: block;
   padding: 10px;
-  color: #0bbed6;
+  color: #00aeea;
   text-decoration: none;
 }
 ul.menu > li > a:hover {
@@ -55,7 +57,7 @@ ul.submenu > li {
 ul.submenu > li > a {
   display: block;
   padding: 10px;
-  color: #0bbed6;
+  color: #00aeea;
   text-decoration: none;
 }
 ul.submenu > li > a:hover {
@@ -65,7 +67,7 @@ ul.menu li:hover .submenu {
   display: block;
 }
 .menu-left {
-  background-color: #0bbed6;
+  background-color: #00aeea;
   color: #ffffff;
   float: right;
   text-decoration: none;
@@ -81,7 +83,7 @@ header {
 }
 .buttom-contact {
   color: #000000;
-  border: 1px solid #0bbed6;
+  border: 1px solid #00aeea;
   float: right;
   text-decoration: none;
   padding: 10px;
@@ -126,14 +128,16 @@ header {
 .header2 > p {
   font-size: 20px;
 }
+.header2 > h1 {
+  margin-left: 1em;
+  margin-right: 1em;
+}
 .header-items {
   display: flex;
   justify-content: space-around;
 }
-@media screen and (min-width: 1366px) {
-  #root {
-    max-width: 1366px;
-    margin: 0 auto;
-    padding: 0;
-  }
+.limiter {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0;
 }
