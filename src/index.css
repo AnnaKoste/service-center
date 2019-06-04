@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url(img/bg.png);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.top-menu {
+  display: inline-block;
+  width: 100%;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+ul.menu {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.menu > li {
+  float: left;
+  position: relative;
+}
+ul.menu > li > a {
+  display: block;
+  padding: 10px;
+  color: #0bbed6;
+  text-decoration: none;
+}
+ul.menu > li > a:hover {
+  background-color: #e3e0e7;
+}
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 38px;
+  left: 0;
+  padding: 0;
+  border: 1px solid #e3e0e7;
+  background-color: #ffffff;
+}
+ul.submenu > li {
+  display: block;
+}
+ul.submenu > li > a {
+  display: block;
+  padding: 10px;
+  color: #0bbed6;
+  text-decoration: none;
+}
+ul.submenu > li > a:hover {
+  background-color: #e3e0e7;
+}
+ul.menu li:hover .submenu {
+  display: block;
+}
+.menu-left {
+  background-color: #0bbed6;
+  color: #ffffff;
+  float: right;
+  text-decoration: none;
+  padding: 10px;
+}
+header {
+  margin: 2% 0 2% 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.buttom-contact {
+  color: #000000;
+  border: 1px solid #0bbed6;
+  float: right;
+  text-decoration: none;
+  padding: 10px;
+  width: 203px;
+  text-align: center;
+}
+.logo {
+  width: 100px;
+}
+.small-icon {
+  width: 13px;
+  margin-right: 4px;
+}
+.middle-icon {
+  width: 23px;
+}
+.big-icon {
+  width: 40px;
+}
+.address > p {
+  font-size: 14px;
+  margin: 0;
+  padding: 2px;
+}
+.img-text-block {
+  display: flex;
+  align-items: center;
+}
+.img-text-block > p {
+  margin: 0.5em;
+  text-align: left;
+}
+.header2 {
+  background-image: url(img/bg2.png);
+  background-size: 100%;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.header2 > p {
+  font-size: 20px;
+}
+.header-items {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 1366px) {
+  #root {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
