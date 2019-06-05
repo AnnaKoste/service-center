@@ -65,19 +65,19 @@ class Table extends React.Component {
             <table>
               <thead className="price-header" onClick={this.toggle.bind(this)} >
                 <tr>
-                  <th width="55%" className="table-header">{this.state.data.type}</th>
-                  <th width="15%">от {this.state.data.maxTerm} минут</th>
-                  <th width="15%"> </th>
-                  <th width="15%" className="table-header price-header-right">{this.state.symbol}</th>
+                  <th className="table-header long">{this.state.data.type}</th>
+                  <th className="short">от {this.state.data.maxTerm} минут</th>
+                  <th className="short"> </th>
+                  <th className="table-header price-header-right short">{this.state.symbol}</th>
                 </tr>
               </thead>
               <tbody hidden={ this.state.shown }>
                 {this.state.data.options.map(op => (
                   <tr>
-                    <td width="55%">{op.name}</td>
-                    <td width="15%" className="text-green">от {op.term} минут</td>
-                    <td width="15%" className="text-green">{op.cost}</td>
-                    <td width="15%" className="text-blue">Записаться</td>
+                    <td className="long">{op.name}</td>
+                    <td className="text-green short">от {op.term} минут</td>
+                    <td className="text-green short">{op.cost}</td>
+                    <td className="text-blue short">Записаться</td>
                   </tr>
                 ))}
               </tbody>

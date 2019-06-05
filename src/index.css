@@ -7,7 +7,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(img/bg4.png);
-  background-size: cover;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -242,6 +241,9 @@ ul.menu li:hover .submenu {
   }
   .phone, .address {
     margin-left: 1em;
+  }
+  th, td {
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 330px) {
