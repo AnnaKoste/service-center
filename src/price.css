@@ -7,15 +7,21 @@ table {
   text-align: left;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25);
   border-spacing: 0;
+  margin-bottom: 5px;
 }
-td {
+th, td {
   padding: 1em;
 }
 tbody tr:nth-child(odd) {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 tbody tr:nth-child(even) {
-  background-color: #f0f1f2;
+  background-color: #e3e3e3;
+}
+tbody tr:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0,0,0,0.25) inset;
+  box-shadow: 0 0 2px rgba(0,0,0,0.25);
 }
 .price-header {
   background-image: url(img/bg3.jpg);

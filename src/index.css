@@ -13,6 +13,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.limiter {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0;
+}
 .top-menu {
   display: inline-block;
   width: 100%;
@@ -73,9 +78,9 @@ ul.menu li:hover .submenu {
   text-decoration: none;
   padding: 10px;
 }
-header {
-  margin: 2% 0 2% 0;
-  padding: 0;
+.head {
+  margin: 0;
+  padding: 1em 0 1em 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,9 +140,5 @@ header {
 .header-items {
   display: flex;
   justify-content: space-around;
-}
-.limiter {
-  max-width: 1366px;
-  margin: 0 auto;
-  padding: 0;
+  padding-top: 1em;
 }

@@ -42,25 +42,27 @@ const Main = () => (
   <div className="main">
     <Icons />
     <header className="limiter">
-      <div>
-        <img src={logo} alt={"logo"} className="logo" />
-      </div>
-      <div className="address">
-        <div className="img-text-block">
-          <img src={map} className="small-icon" alt=""/>
-          <p> Челябинск, ул. Цвиллинга, д. 57</p>
+      <div className="head">
+        <div>
+          <img src={logo} alt={"logo"} className="logo" />
+        </div>
+        <div className="address">
+          <div className="img-text-block">
+            <img src={map} className="small-icon" alt=""/>
+            <p> Челябинск, ул. Цвиллинга, д. 57</p>
+          </div>
+          <div className="img-text-block">
+            <img src={clock} className="small-icon" alt=""/>
+            <p> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
+          </div>
         </div>
         <div className="img-text-block">
-          <img src={clock} className="small-icon" alt=""/>
-          <p> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
+          <img src={phone} className="middle-icon" alt=""/>
+          <p><strong> +7 904 300 66 00</strong></p>
         </div>
-      </div>
-      <div className="img-text-block">
-        <img src={phone} className="middle-icon" alt=""/>
-        <p><strong> +7 904 300 66 00</strong></p>
-      </div>
-      <div>
-        <NavLink to='/' className='buttom-contact'>Нужна консультация?</NavLink>
+        <div>
+          <NavLink to='/' className='buttom-contact'>Нужна консультация?</NavLink>
+        </div>
       </div>
     </header>
     <div className="header2">
