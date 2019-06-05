@@ -46,19 +46,21 @@ const Main = () => (
         <div>
           <img src={logo} alt={"logo"} className="logo" />
         </div>
-        <div className="address">
-          <div className="img-text-block">
-            <img src={map} className="small-icon" alt=""/>
-            <p> Челябинск, ул. Цвиллинга, д. 57</p>
+        <div className="contacts">
+          <div className="address">
+            <div className="img-text-block">
+              <img src={map} className="small-icon" alt=""/>
+              <p className="text-address"> Челябинск, ул. Цвиллинга, д. 57</p>
+            </div>
+            <div className="img-text-block">
+              <img src={clock} className="small-icon" alt=""/>
+              <p className="text-address"> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
+            </div>
           </div>
           <div className="img-text-block">
-            <img src={clock} className="small-icon" alt=""/>
-            <p> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
+            <img src={phone} className="middle-icon" alt=""/>
+            <p className="text-phone"><strong> +7 904 300 66 00</strong></p>
           </div>
-        </div>
-        <div className="img-text-block">
-          <img src={phone} className="middle-icon" alt=""/>
-          <p><strong> +7 904 300 66 00</strong></p>
         </div>
         <div>
           <NavLink to='/' className='buttom-contact'>Нужна консультация?</NavLink>
@@ -66,7 +68,7 @@ const Main = () => (
       </div>
     </header>
     <div className="header2">
-      <div className="limiter">
+      <div className="limiter header-text">
         <h1>Срочный ремонт цифровой техники в центре Челябинска любой сложности
         от 10 минут с гарантией до 90 дней</h1>
         <p>Ремонтируем телефоны, планшеты, ноутбуки, компьютеры и другую технику</p>
@@ -76,7 +78,7 @@ const Main = () => (
             <p>Множество запчастей<br />в наличии и под заказ</p>
           </div>
           <div className="img-text-block">
-            <img src={phone} className="big-icon" alt=""/>
+            <img src={phone} className="big-icon-phone" alt=""/>
             <p>Предоставляем телефон<br />на подмену</p>
           </div>
           <div className="img-text-block">

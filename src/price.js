@@ -67,7 +67,7 @@ class Table extends React.Component {
                 <tr>
                   <th width="55%" className="table-header">{this.state.data.type}</th>
                   <th width="15%">от {this.state.data.maxTerm} минут</th>
-                  <th width="15%"></th>
+                  <th width="15%"> </th>
                   <th width="15%" className="table-header price-header-right">{this.state.symbol}</th>
                 </tr>
               </thead>
