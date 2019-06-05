@@ -46,21 +46,19 @@ const Main = () => (
         <div>
           <img src={logo} alt={"logo"} className="logo" />
         </div>
-        <div className="contacts">
-          <div className="address">
-            <div className="img-text-block">
-              <img src={map} className="small-icon" alt=""/>
-              <p className="text-address"> Челябинск, ул. Цвиллинга, д. 57</p>
-            </div>
-            <div className="img-text-block">
-              <img src={clock} className="small-icon" alt=""/>
-              <p className="text-address"> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
-            </div>
+        <div className="address">
+          <div className="img-text-block">
+            <img src={map} className="small-icon" alt=""/>
+            <p className="text-address"> Челябинск, ул. Цвиллинга, д. 57</p>
           </div>
           <div className="img-text-block">
-            <img src={phone} className="middle-icon" alt=""/>
-            <p className="text-phone"><strong> +7 904 300 66 00</strong></p>
+            <img src={clock} className="small-icon" alt=""/>
+            <p className="text-address"> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
           </div>
+        </div>
+        <div className="img-text-block phone">
+          <img src={phone} className="middle-icon" alt=""/>
+          <p className="text-phone"><strong> +7 904 300 66 00</strong></p>
         </div>
         <div>
           <NavLink to='/' className='buttom-contact'>Нужна консультация?</NavLink>

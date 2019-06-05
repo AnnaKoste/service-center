@@ -27,9 +27,6 @@ code {
   background-color: #ffffff;
   box-shadow: 0 1px 5px rgba(0,0,0,0.25);
 }
-.contacts {
-  display: flex;
-}
 ul.menu {
   display: inline-block;
   margin: 0;
@@ -179,17 +176,20 @@ ul.menu li:hover .submenu {
   }
 }
 @media screen and (max-width: 610px) {
-  .contacts {
-    display: block;
+  .logo {
+    display: none;
   }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 550px) {
   ul.menu {
     display: flex;
     justify-content: center;
   }
-  .buttom-contact, .menu-left {
-    margin-top: 2.5em;
+  .buttom-contact {
+    margin-top: 3.5em;
+  }
+  .menu-left {
+    margin-top: 1.4em;
   }
   .big-icon {
     width: 20px;
@@ -201,17 +201,16 @@ ul.menu li:hover .submenu {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 420px) {
-  .logo {
-    display: none;
-  }
-}
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
   a, .text-phone {
     font-size: 9px;
   }
   .buttom-contact {
     width: 121px;
+    margin-top: 4em;
+  }
+  .menu-left {
+    margin-top: 2em;
   }
   h1 {
     font-size: 17px;
@@ -224,5 +223,29 @@ ul.menu li:hover .submenu {
   }
   h2, {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .head {
+    display: block;
+  }
+  .menu-left {
+    margin-top: 2.5em;
+  }
+  .buttom-contact {
+    position: absolute;
+    top: 8em;
+    right: 0;
+  }
+  .text-phone {
+    font-size: 12px;
+  }
+  .phone, .address {
+    margin-left: 1em;
+  }
+}
+@media screen and (max-width: 330px) {
+  .phone, .address {
+    max-width: 150px;
   }
 }
