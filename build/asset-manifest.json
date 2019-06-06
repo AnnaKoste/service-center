@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/service-center/static/css/main.3be238d7.chunk.css",
+    "main.js": "/service-center/static/js/main.a191d051.chunk.js",
+    "main.js.map": "/service-center/static/js/main.a191d051.chunk.js.map",
+    "runtime~main.js": "/service-center/static/js/runtime~main.c08cea13.js",
+    "runtime~main.js.map": "/service-center/static/js/runtime~main.c08cea13.js.map",
+    "static/js/2.a38a515d.chunk.js": "/service-center/static/js/2.a38a515d.chunk.js",
+    "static/js/2.a38a515d.chunk.js.map": "/service-center/static/js/2.a38a515d.chunk.js.map",
+    "index.html": "/service-center/index.html",
+    "precache-manifest.e23cd209e363edbce2e763962331af79.js": "/service-center/precache-manifest.e23cd209e363edbce2e763962331af79.js",
+    "service-worker.js": "/service-center/service-worker.js",
+    "static/css/main.3be238d7.chunk.css.map": "/service-center/static/css/main.3be238d7.chunk.css.map",
+    "static/media/index.css": "/service-center/static/media/bg4.31b6bcd9.png",
+    "static/media/price.css": "/service-center/static/media/bg3.eda8cfe6.jpg",
+    "static/media/fb.png": "/service-center/static/media/fb.32cacd3a.png",
+    "static/media/inst.png": "/service-center/static/media/inst.a6179871.png",
+    "static/media/logo.jpg": "/service-center/static/media/logo.d496de97.jpg",
+    "static/media/od.png": "/service-center/static/media/od.32411873.png",
+    "static/media/target.png": "/service-center/static/media/target.a7ff0497.png",
+    "static/media/vk.png": "/service-center/static/media/vk.e936f69a.png"
+  }
+}
