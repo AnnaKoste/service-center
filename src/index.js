@@ -20,12 +20,12 @@ const Menu = () => (
       <div class="top-menu">
         <div className="limiter">
           <ul class="menu">
-            <li ><NavLink to='/'>Услуги и цены &#8744;
+            <li ><NavLink to='/service'>Услуги и цены &#8744;
               <ul class="submenu">
-                <li><NavLink to='/'>Ремонт смартфонов</NavLink></li>
-                <li><NavLink to='/'>Ремонт планшетов</NavLink></li>
-                <li><NavLink to='/'>Ремонт ноутбуков</NavLink></li>
-                <li><NavLink to='/'>Ремонт компьютеров</NavLink></li>
+                <li><NavLink to='/service/smartphone'>Ремонт смартфонов</NavLink></li>
+                <li><NavLink to='/service/tablet'>Ремонт планшетов</NavLink></li>
+                <li><NavLink to='/service/laptop'>Ремонт ноутбуков</NavLink></li>
+                <li><NavLink to='/service/computer'>Ремонт компьютеров</NavLink></li>
               </ul>
             </NavLink></li>
             <li><NavLink to='/promotions'>Акции</NavLink></li>
@@ -61,7 +61,7 @@ const Main = () => (
           <p className="text-phone"><strong> +7 904 300 66 00</strong></p>
         </div>
         <div>
-          <NavLink to='/' className='buttom-contact'>Нужна консультация?</NavLink>
+          <NavLink to='/' className='button-contact'>Нужна консультация?</NavLink>
         </div>
       </div>
     </header>
@@ -89,6 +89,8 @@ const Main = () => (
     <main>
       <Switch>
         <Route exact path="/" component={Price} />
+        <Route path="/service" component={Price} />
+        <Route path="/service/smartphone" component={Price} />
         <Route path="/promotions" component={Promotions} />
         <Route path="/reviews" component={Reviews} />
         <Route path="/about" component={About} />

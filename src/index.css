@@ -72,10 +72,12 @@ ul.menu li:hover .submenu {
 }
 .menu-left {
   background-color: #00aeea;
+  border: 1px solid #00aeea;
   color: #ffffff;
   float: right;
   text-decoration: none;
   padding: 10px;
+  width: 205px;
 }
 .head {
   margin: 0;
@@ -85,13 +87,13 @@ ul.menu li:hover .submenu {
   align-items: center;
   width: 100%;
 }
-.buttom-contact {
+.button-contact {
   color: #000000;
   border: 1px solid #00aeea;
   float: right;
   text-decoration: none;
   padding: 10px;
-  width: 203px;
+  width: 205px;
   text-align: center;
 }
 .logo {
@@ -157,8 +159,8 @@ ul.menu li:hover .submenu {
   a, .text-phone {
     font-size: 12px;
   }
-  .buttom-contact {
-    width: 157px;
+  .button-contact, .menu-left {
+    width: 159px;
   }
   .top-menu {
     height: 35px;
@@ -186,7 +188,7 @@ ul.menu li:hover .submenu {
     display: flex;
     justify-content: center;
   }
-  .buttom-contact {
+  .button-contact {
     margin-top: 3.5em;
   }
   .menu-left {
@@ -206,12 +208,13 @@ ul.menu li:hover .submenu {
   a, .text-phone {
     font-size: 9px;
   }
-  .buttom-contact {
-    width: 121px;
+  .button-contact {
+    width: 125px;
     margin-top: 4em;
   }
   .menu-left {
     margin-top: 2em;
+    width: 125px;
   }
   h1 {
     font-size: 17px;
@@ -231,11 +234,11 @@ ul.menu li:hover .submenu {
     display: block;
   }
   .menu-left {
-    margin-top: 2.5em;
+    margin-top: 25px;
   }
-  .buttom-contact {
+  .button-contact {
     position: absolute;
-    top: 8em;
+    top: 70px;
     right: 0;
   }
   .text-phone {
