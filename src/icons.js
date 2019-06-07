@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './icons.css';
 import fb from './img/fb.png'
 import inst from './img/inst.png'
@@ -12,16 +11,16 @@ function Icons() {
     <div className="icons">
       <div className="icons-sm">
         <div>
-          <NavLink to='/'><img src={vk} alt={"vkontakte"} className="icon big-icon"/></NavLink>
+          <a target="_blank" rel="nofollow" href='https://vk.com'><img src={vk} alt={"vkontakte"} className="icon big-icon"/></a>
         </div>
         <div>
-          <NavLink to='/'><img src={inst} alt={"instagram"} className="icon big-icon"/></NavLink>
+          <a target="_blank" rel="nofollow" href='https://www.instagram.com/'><img src={inst} alt={"instagram"} className="icon big-icon"/></a>
         </div>
         <div>
-          <NavLink to='/'><img src={od} alt={"odnoklassniki"} className="icon big-icon"/></NavLink>
+          <a target="_blank" rel="nofollow" href='https://ok.ru/'><img src={od} alt={"odnoklassniki"} className="icon big-icon"/></a>
         </div>
         <div>
-          <NavLink to='/'><img src={fb} alt={"facebook"} className="icon big-icon"/></NavLink>
+          <a target="_blank" rel="nofollow" href='https://www.facebook.com'><img src={fb} alt={"facebook"} className="icon big-icon"/></a>
         </div>
       </div>
       <div className="icon arrowUp">
