@@ -85,6 +85,10 @@ ul.menu li:hover .submenu {
   padding: 10px;
   width: 205px;
 }
+.menu-left:hover {
+  background-color: #ffffff;
+  color: #00aeea;
+}
 .head {
   margin: 0;
   padding: 1em 0 1em 0;
@@ -101,6 +105,10 @@ ul.menu li:hover .submenu {
   padding: 10px;
   width: 205px;
   text-align: center;
+}
+.button-contact:hover {
+  background-color: #00aeea;
+  color: #ffffff;
 }
 .logo {
   width: 100px;

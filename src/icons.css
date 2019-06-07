@@ -7,6 +7,12 @@
   right: 10px;
 	top: 35%;
 }
+.icon {
+  opacity: 0.5;
+}
+.icon:hover {
+  opacity: 1;
+}
 .arrowUp {
   position: fixed;
   cursor: pointer;

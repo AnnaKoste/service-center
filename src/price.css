@@ -32,7 +32,11 @@ tbody tr:hover {
 }
 .price-header {
   background-image: url(img/bg3.jpg);
+  opacity: 0.8;
   color: #ffffff;
+}
+.price-header:hover {
+  opacity: 1;
 }
 .table-header {
   font-size: 20px;

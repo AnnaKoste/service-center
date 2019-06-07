@@ -12,19 +12,19 @@ function Icons() {
     <div className="icons">
       <div className="icons-sm">
         <div>
-          <NavLink to='/'><img src={vk} alt={"vkontakte"} className="big-icon"/></NavLink>
+          <NavLink to='/'><img src={vk} alt={"vkontakte"} className="icon big-icon"/></NavLink>
         </div>
         <div>
-          <NavLink to='/'><img src={inst} alt={"instagram"} className="big-icon"/></NavLink>
+          <NavLink to='/'><img src={inst} alt={"instagram"} className="icon big-icon"/></NavLink>
         </div>
         <div>
-          <NavLink to='/'><img src={od} alt={"odnoklassniki"} className="big-icon"/></NavLink>
+          <NavLink to='/'><img src={od} alt={"odnoklassniki"} className="icon big-icon"/></NavLink>
         </div>
         <div>
-          <NavLink to='/'><img src={fb} alt={"facebook"} className="big-icon"/></NavLink>
+          <NavLink to='/'><img src={fb} alt={"facebook"} className="icon big-icon"/></NavLink>
         </div>
       </div>
-      <div className="arrowUp">
+      <div className="icon arrowUp">
         <ScrollButton scrollStepInPx="50" delayInMs="16.66"/>
       </div>
     </div>
