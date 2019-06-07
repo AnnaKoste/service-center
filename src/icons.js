@@ -34,28 +34,43 @@ function Icons() {
 class ScrollButton extends React.Component {
   constructor() {
     super();
-
     this.state = {
-        intervalId: 0
+      intervalId: 0,
+      isHide: true
     };
+    this.hideBar = this.hideBar.bind(this)
   }
+  hideBar(){
+    let {isHide} = this.state.isHide
+    window.scrollY > this.prev?
+    !isHide && this.setState({isHide:false})
+    :
+    isHide && this.setState({isHide:true})
 
+    this.prev = window.scrollY;
+  }
+  componentDidMount(){
+    window.addEventListener('scroll',this.hideBar);
+  }
+  componentWillUnmount(){
+    window.removeEventListener('scroll',this.hideBar);
+  }
   scrollStep() {
     if (window.pageYOffset === 0) {
-        clearInterval(this.state.intervalId);
+      clearInterval(this.state.intervalId);
     }
     window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
   }
-
   scrollToTop() {
     let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
     this.setState({ intervalId: intervalId });
   }
 
   render () {
-      return  <span className='arrow-up glyphicon glyphicon-chevron-up'>
-                <img src={arrowUp} alt="" className="big-icon scroll" onClick={ () => { this.scrollToTop(); }} />
-              </span>;
+    let classHide=this.state.isHide?"hide":""
+    return  <span className='arrow-up glyphicon glyphicon-chevron-up' hidden={ classHide }>
+      <img src={arrowUp} alt="" className="big-icon scroll" onClick={ () => { this.scrollToTop(); }} />
+      </span>;
    }
 }
 
