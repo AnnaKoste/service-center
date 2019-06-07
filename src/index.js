@@ -46,18 +46,18 @@ const Main = () => (
           <img src={logo} alt={"Mobiup"} className="logo" />
         </div>
         <div className="address">
-          <div className="img-text-block">
+          <div className="img-text-block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <img src={map} className="small-icon" alt=""/>
-            <p className="text-address"> Челябинск, ул. Цвиллинга, д. 57</p>
+            <span itemprop="streetAddress" className="text-address">Челябинск, ул. Цвиллинга, д. 57</span>
           </div>
           <div className="img-text-block">
             <img src={clock} className="small-icon" alt=""/>
-            <p className="text-address"> Будни: 9:00-18:00б Сб: 9:00-17:00</p>
+            <span itemprop="openingHours" datetime="Mo-Fr 9:00−18:00, Sa 9:00-17:00" className="text-address"> Будни: 9:00-18:00, Сб: 9:00-17:00</span>
           </div>
         </div>
         <div className="img-text-block phone">
           <img src={phone} className="middle-icon" alt=""/>
-          <p className="text-phone"><strong> +7 904 300 66 00</strong></p>
+          <span itemprop="telephone" className="text-phone"><strong> +7 904 300 66 00</strong></span>
         </div>
         <div>
           <NavLink to='/' className='button-contact'>Нужна консультация?</NavLink>

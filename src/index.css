@@ -121,6 +121,7 @@ ul.menu li:hover .submenu {
 }
 .middle-icon {
   width: 13px;
+  margin-right: 4px;
 }
 .big-icon {
   width: 40px;
@@ -137,7 +138,7 @@ ul.menu li:hover .submenu {
   display: flex;
   align-items: center;
 }
-.img-text-block > p {
+.img-text-block > span {
   margin: 0.5em;
   text-align: left;
 }
@@ -190,7 +191,7 @@ ul.menu li:hover .submenu {
   h2, th.table-header, .header-text > p {
     font-size: 15px;
   }
-  th, td, .img-text-block > p {
+  th, td, .img-text-block > span {
     font-size: 12px;
   }
   h2, {
@@ -244,7 +245,7 @@ ul.menu li:hover .submenu {
   h2, th.table-header, .header-text > p {
     font-size: 12px;
   }
-  th, td, .img-text-block > p {
+  th, td, .img-text-block > span {
     font-size: 10px;
   }
   h2, {
