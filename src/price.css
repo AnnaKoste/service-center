@@ -37,6 +37,7 @@ tbody tr:hover {
 }
 .price-header:hover {
   opacity: 1;
+  transition: 1s;
 }
 .table-header {
   font-size: 20px;

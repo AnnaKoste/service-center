@@ -88,6 +88,7 @@ ul.menu li:hover .submenu {
 .menu-left:hover {
   background-color: #ffffff;
   color: #00aeea;
+  transition: 1s;
 }
 .head {
   margin: 0;
@@ -109,6 +110,7 @@ ul.menu li:hover .submenu {
 .button-contact:hover {
   background-color: #00aeea;
   color: #ffffff;
+  transition: 1s;
 }
 .logo {
   width: 100px;

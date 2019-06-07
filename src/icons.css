@@ -12,6 +12,7 @@
 }
 .icon:hover {
   opacity: 1;
+  transition: 1s;
 }
 .arrowUp {
   position: fixed;

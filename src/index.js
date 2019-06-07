@@ -43,7 +43,7 @@ const Main = () => (
     <header className="limiter">
       <div className="head">
         <div>
-          <img src={logo} alt={"logo"} className="logo" />
+          <img src={logo} alt={"Mobiup"} className="logo" />
         </div>
         <div className="address">
           <div className="img-text-block">
