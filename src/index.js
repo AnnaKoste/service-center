@@ -20,7 +20,7 @@ const Menu = () => (
       <div class="top-menu">
         <div className="limiter">
           <ul class="menu">
-            <li ><NavLink to='/service'>Услуги и цены &#8744;
+            <li ><NavLink to='/'>Услуги и цены &#8744;
               <ul class="submenu">
                 <li><NavLink to='/service/smartphone'>Ремонт смартфонов</NavLink></li>
                 <li><NavLink to='/service/tablet'>Ремонт планшетов</NavLink></li>
@@ -89,8 +89,7 @@ const Main = () => (
     <main>
       <Switch>
         <Route exact path="/" component={Price} />
-        <Route path="/service" component={Price} />
-        <Route path="/service/smartphone" component={Price} />
+        <Route path="/service/:name" component={Price} />
         <Route path="/promotions" component={Promotions} />
         <Route path="/reviews" component={Reviews} />
         <Route path="/about" component={About} />

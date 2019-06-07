@@ -2,7 +2,8 @@ import React from 'react';
 import './price.css';
 
 var data = [
-  {type: 'Ремонт смартфонов',
+  { id: 'smartphone',
+  type: 'Ремонт смартфонов',
   maxTerm: 5,
   options: [{name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
@@ -10,7 +11,8 @@ var data = [
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'}
   ]},
-  {type: 'Ремонт планшетов',
+  {id: 'tablet',
+  type: 'Ремонт планшетов',
   maxTerm: 10,
   options: [{name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 10, cost: 'Бесплатно'},
@@ -18,7 +20,8 @@ var data = [
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'}
   ]},
-  {type: 'Ремонт ноутбуков',
+  {id: 'laptop',
+  type: 'Ремонт ноутбуков',
   maxTerm: 15,
   options: [{name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
@@ -26,7 +29,8 @@ var data = [
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'}
   ]},
-  {type: 'Ремонт компьютеров',
+  {id: 'computer',
+  type: 'Ремонт компьютеров',
   maxTerm: 20,
   options: [{name: 'Диагностика неисправности',  term: 20, cost: 'Бесплатно'},
     {name: 'Диагностика неисправности',  term: 5, cost: 'Бесплатно'},
@@ -40,11 +44,15 @@ class Table extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      shown: true,
+      shown: this.props.shown,
       symbol: '⋁',
       data: this.props.data
     };
     this.toggle = this.toggle.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({ data: nextProps.data });
   }
 
   toggle() {
@@ -88,13 +96,37 @@ class Table extends React.Component {
 }
 
 class Price extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      serviceName: this.props.match.params.name
+    };
+  }
+  componentWillReceiveProps(nextProps) {
+    this.setState({ serviceName: nextProps.match.params.name });
+    console.log( "hi", nextProps.match.params.name);
+  }
+
   render() {
-    return <div className="price limiter">
-      <h2>Прайс на услуги по ремонту</h2>
+    let typeOfService;
+    if (this.state.serviceName) {
+      return <div className="price limiter">
+        <h2>Прайс на услуги по ремонту</h2>
+        {data.forEach(item => {
+          if (item.id === this.state.serviceName) {
+            typeOfService = item;
+          }
+        })}
+        <Table data={typeOfService} />
+      </div>
+    } else {
+      return <div className="price limiter">
+        <h2>Прайс на услуги по ремонту</h2>
       {data.map(item => (
-        <Table data={item}/>
+        <Table data={item} shown="false"/>
       ))}
-    </div>
+      </div>
+    }
   }
 }
 
