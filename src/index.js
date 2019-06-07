@@ -17,29 +17,28 @@ import target from './img/target.png'
 import * as serviceWorker from './serviceWorker';
 
 const Menu = () => (
-      <div class="top-menu">
-        <div className="limiter">
-          <ul class="menu">
-            <li ><NavLink to='/'>Услуги и цены &#8744;
-              <ul class="submenu">
-                <li><NavLink to='/service/smartphone'>Ремонт смартфонов</NavLink></li>
-                <li><NavLink to='/service/tablet'>Ремонт планшетов</NavLink></li>
-                <li><NavLink to='/service/laptop'>Ремонт ноутбуков</NavLink></li>
-                <li><NavLink to='/service/computer'>Ремонт компьютеров</NavLink></li>
-              </ul>
-            </NavLink></li>
-            <li><NavLink to='/promotions'>Акции</NavLink></li>
-            <li><NavLink to='/reviews'>Отзывы</NavLink></li>
-            <li><NavLink to='/about'>О нас</NavLink></li>
-            <li><NavLink to='/contacts'>Контакты</NavLink></li>
+  <div class="top-menu">
+    <div className="limiter">
+      <ul class="menu">
+        <li ><NavLink to='/'>Услуги и цены &#8744;
+          <ul class="submenu">
+            <li><NavLink to='/service/smartphone'>Ремонт смартфонов</NavLink></li>
+            <li><NavLink to='/service/tablet'>Ремонт планшетов</NavLink></li>
+            <li><NavLink to='/service/laptop'>Ремонт ноутбуков</NavLink></li>
+            <li><NavLink to='/service/computer'>Ремонт компьютеров</NavLink></li>
           </ul>
-          <NavLink to='/' className='menu-left'>&#9998; Бесплатная диагностика</NavLink>
-        </div>
-      </div>
+        </NavLink></li>
+        <li><NavLink to='/promotions'>Акции</NavLink></li>
+        <li><NavLink to='/reviews'>Отзывы</NavLink></li>
+        <li><NavLink to='/about'>О нас</NavLink></li>
+        <li><NavLink to='/contacts'>Контакты</NavLink></li>
+      </ul>
+    </div>
+  </div>
 )
 
 const Main = () => (
-  <div className="main">
+  <div className="main-block">
     <Icons />
     <header className="limiter">
       <div className="head">
@@ -63,6 +62,9 @@ const Main = () => (
         <div>
           <NavLink to='/' className='button-contact'>Нужна консультация?</NavLink>
         </div>
+      </div>
+      <div>
+        <NavLink to='/' className='menu-left'>&#9998; Бесплатная диагностика</NavLink>
       </div>
     </header>
     <div className="header2">
