@@ -32,6 +32,7 @@ const Menu = () => (
         <li><NavLink to='/reviews'>Отзывы</NavLink></li>
         <li><NavLink to='/about'>О нас</NavLink></li>
         <li><NavLink to='/contacts'>Контакты</NavLink></li>
+        <NavLink to='/' className='menu-left'>&#9998; Бесплатная диагностика</NavLink>
       </ul>
     </div>
   </div>
@@ -62,9 +63,6 @@ const Main = () => (
         <div>
           <NavLink to='/' className='button-contact'>Нужна консультация?</NavLink>
         </div>
-      </div>
-      <div>
-        <NavLink to='/' className='menu-left'>&#9998; Бесплатная диагностика</NavLink>
       </div>
     </header>
     <div className="header2">
