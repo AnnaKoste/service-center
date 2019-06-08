@@ -205,14 +205,15 @@ ul.menu li:hover .submenu {
     display: flex;
     justify-content: center;
   }
-  .button-contact {
-    margin-top: 3.5em;
+  .top-menu {
+    height: 78px;
   }
   .menu-left {
-    position: absolute;
-    z-index: -1;
-    top: 4.5em;
-    right: 0;
+    position: fixed;
+    top: 40px;
+  }
+  .main-block {
+    padding-top: 78px;
   }
   .big-icon {
     width: 20px;
@@ -228,13 +229,13 @@ ul.menu li:hover .submenu {
   a, .text-phone {
     font-size: 9px;
   }
+  .top-menu {
+    height: 74px;
+  }
   .button-contact {
     width: 125px;
-    margin-top: 4em;
   }
   .menu-left {
-    right: 0;
-    top: 6em;
     width: 125px;
   }
   h1 {
@@ -254,13 +255,14 @@ ul.menu li:hover .submenu {
   .head {
     display: block;
   }
-  .menu-left {
-    top: 6.5em;
+  .text-address {
+    max-width: 350px;
   }
   .button-contact {
     position: absolute;
-    top: 70px;
-    right: 0;
+    top: 110px;
+    right: 1em;
+    z-index: -1;
   }
   .text-phone {
     font-size: 12px;
@@ -271,15 +273,8 @@ ul.menu li:hover .submenu {
   th, td {
     font-size: 8px;
   }
-  .top-menu {
-    height: 32px;
-  }
-  ul.submenu {
-    width: 150px;
-    top: 32px;
-  }
 }
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 360px) {
   .phone, .address {
     max-width: 150px;
   }
