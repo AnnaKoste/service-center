@@ -65,23 +65,23 @@ const Main = () => (
         </div>
       </div>
     </header>
-    <div className="header2">
-      <div className="limiter header-text">
+    <div className="limiter">
+      <div className="header2">
         <h1>Срочный ремонт цифровой техники в центре Челябинска любой сложности
         от 10 минут с гарантией до 90 дней</h1>
         <p>Ремонтируем телефоны, планшеты, ноутбуки, компьютеры и другую технику</p>
         <div className="header-items">
-          <div className="img-text-block">
+          <div className="img-text-block-big">
             <img src={gear} className="big-icon" alt=""/>
-            <p>Множество запчастей<br />в наличии и под заказ</p>
+            <p>Множество запчастей в наличии и под заказ</p>
           </div>
-          <div className="img-text-block">
+          <div className="img-text-block-big">
             <img src={phone} className="big-icon-phone" alt=""/>
-            <p>Предоставляем телефон<br />на подмену</p>
+            <p>Предоставляем телефон на подмену</p>
           </div>
-          <div className="img-text-block">
+          <div className="img-text-block-big">
             <img src={target} className="big-icon" alt=""/>
-            <p>Скидка 10% на услуги для<br />всех записавшихся с сайта</p>
+            <p>Скидка 10% на услуги для всех записавшихся с сайта</p>
           </div>
         </div>
       </div>

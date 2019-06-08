@@ -137,33 +137,41 @@ ul.menu li:hover .submenu {
   display: flex;
   align-items: center;
 }
+.img-text-block-big {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+.img-text-block-big > p {
+  margin: 0.5em;
+}
 .img-text-block > span {
   margin: 0.5em;
   text-align: left;
 }
 .header2 {
   width: 100%;
+  margin: 0;
   background-image: url(img/bg2.png);
   background-size: cover;
   color: #ffffff;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
-.header-text{
-  padding: 1em;
-}
-.header-text > p {
+.header2 > p {
   font-size: 20px;
+  margin: 1em;
 }
-.header-text > h1 {
-  margin: 0;
+.header2 > h1 {
+  margin: 1em;
   padding: 0;
 }
 .header-items {
+  width: 100%;
+  margin: 0;
+  padding: 1em 0;
   display: flex;
   justify-content: space-around;
-  padding-top: 0.5em;
 }
 @media screen and (max-width: 820px) {
   .text-address {
@@ -221,7 +229,8 @@ ul.menu li:hover .submenu {
     width: 20px;
   }
   .big-icon-phone {
-    width: 15px;
+    width: 19px;
+    height: 24px;
   }
   h1 {
     font-size: 20px;
@@ -230,6 +239,9 @@ ul.menu li:hover .submenu {
 @media screen and (max-width: 500px) {
   a, .text-phone {
     font-size: 9px;
+  }
+  .menu > li > a {
+    font-size: 12px;
   }
   .top-menu {
     height: 74px;
@@ -244,7 +256,7 @@ ul.menu li:hover .submenu {
     width: 125px;
   }
   h1 {
-    font-size: 17px;
+    font-size: 19px;
   }
   h2, th.table-header, .header-text > p {
     font-size: 12px;
@@ -254,6 +266,9 @@ ul.menu li:hover .submenu {
   }
   h2, {
     font-size: 12px;
+  }
+  .header2 > p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -277,6 +292,22 @@ ul.menu li:hover .submenu {
   }
   th, td {
     font-size: 8px;
+  }
+  .header-items {
+    display: block;
+  }
+  .menu > li > a {
+    font-size: 10px;
+  }
+  .header-items {
+    display: block;
+  }
+  .img-text-block-big {
+    width: 85%;
+    margin-left: 2em;
+  }
+  .img-text-block-big > p {
+    text-align: left;
   }
 }
 @media screen and (max-width: 360px) {
