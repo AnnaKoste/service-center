@@ -31,6 +31,7 @@ code {
   padding-top: 40px;
 }
 ul.menu {
+  z-index: 1;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -74,6 +75,7 @@ ul.menu li:hover .submenu {
   display: block;
 }
 .menu-left {
+  z-index: -1;
   float: right;
   background-color: #00aeea;
   border: 1px solid #00aeea;
@@ -231,6 +233,9 @@ ul.menu li:hover .submenu {
   }
   .top-menu {
     height: 74px;
+  }
+  ul.submenu {
+    top: 32px;
   }
   .button-contact {
     width: 125px;
