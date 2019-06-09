@@ -314,4 +314,7 @@ ul.menu li:hover .submenu {
   .phone, .address {
     max-width: 150px;
   }
+  .menu > li > a {
+    font-size: 9px;
+  }
 }
