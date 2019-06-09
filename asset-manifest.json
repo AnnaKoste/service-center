@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/service-center/static/css/main.48a5e77b.chunk.css",
+    "main.css": "/service-center/static/css/main.1bb99555.chunk.css",
     "main.js": "/service-center/static/js/main.ca6782de.chunk.js",
     "main.js.map": "/service-center/static/js/main.ca6782de.chunk.js.map",
     "runtime~main.js": "/service-center/static/js/runtime~main.c08cea13.js",
@@ -8,9 +8,9 @@
     "static/js/2.a832ae8b.chunk.js": "/service-center/static/js/2.a832ae8b.chunk.js",
     "static/js/2.a832ae8b.chunk.js.map": "/service-center/static/js/2.a832ae8b.chunk.js.map",
     "index.html": "/service-center/index.html",
-    "precache-manifest.ea3ad333e5efc40e200935a5c5700081.js": "/service-center/precache-manifest.ea3ad333e5efc40e200935a5c5700081.js",
+    "precache-manifest.c4022c4df6662e6a8beffd984df3d495.js": "/service-center/precache-manifest.c4022c4df6662e6a8beffd984df3d495.js",
     "service-worker.js": "/service-center/service-worker.js",
-    "static/css/main.48a5e77b.chunk.css.map": "/service-center/static/css/main.48a5e77b.chunk.css.map",
+    "static/css/main.1bb99555.chunk.css.map": "/service-center/static/css/main.1bb99555.chunk.css.map",
     "static/media/index.css": "/service-center/static/media/bg4.31b6bcd9.png",
     "static/media/price.css": "/service-center/static/media/bg3.eda8cfe6.jpg",
     "static/media/fb.png": "/service-center/static/media/fb.32cacd3a.png",
