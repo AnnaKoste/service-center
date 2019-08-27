@@ -103,7 +103,6 @@ class Price extends React.Component {
   }
   componentWillReceiveProps(nextProps) {
     this.setState({ serviceName: nextProps.match.params.name });
-    console.log( "hi", nextProps.match.params.name);
   }
 
   render() {
